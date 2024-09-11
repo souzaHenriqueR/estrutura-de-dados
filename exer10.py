@@ -1,9 +1,6 @@
-def vefMatrizDiag():
+def vefMatrizEsparsa():
     qtdColunas = int(input("Informe o número de colunas da matriz: "))
     qtdLinhas = int(input("Informe o número de linhas da matriz: "))
-    
-    if qtdColunas != qtdLinhas:
-        return print("Valores informados não podem formar uma matriz quadrada.")
     
     m = []
     for i in range(qtdLinhas):
@@ -13,11 +10,19 @@ def vefMatrizDiag():
             l.append(valor)
         m.append(l)
     
+   
+    count_zeros = 0
+    total_elementos = qtdLinhas * qtdColunas
+    
     for i in range(qtdLinhas):
         for j in range(qtdColunas):
-            if i != j and m[i][j] != 0:
-                return print("A matriz não é diagonal.")
+            if m[i][j] == 0:
+                count_zeros += 1
     
-    return print("A matriz é diagonal.")
+    
+    if count_zeros > total_elementos / 2:
+        return print("A matriz é esparsa.")
+    else:
+        return print("A matriz não é esparsa.")
 
-vefMatrizDiag()
+vefMatrizEsparsa()

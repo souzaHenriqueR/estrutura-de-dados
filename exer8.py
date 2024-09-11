@@ -1,9 +1,10 @@
-
-import random
-def verificarMatriz():
-    
+def vefMatrizId():
     qtdColunas = int(input("Informe o número de colunas da matriz : "))
     qtdLinhas = int(input("Informe o número de linhas da matriz : "))
+    
+    if (qtdColunas != qtdLinhas):
+        return print("Valores informados não podem formar uma matriz identidade")
+    
     m = []
     for i in range(qtdColunas):
         l = [] 
@@ -11,24 +12,22 @@ def verificarMatriz():
             valor = int(input("Informe o valor a ser inserido : 1 ou 0 "))
             l.append(valor)
         m.append(l)
-    
+        
+    diagonal = 0
     soma = 0
-    diagonal = True
-    
     for i in range(qtdColunas):
         for j in range(qtdLinhas):
+            soma += m[i][j]
             if (i == j):
-                if (m[i][j] > 0 ):
-                    diagonal = True
-                else:
-                    diagonal = False
+                diagonal += m[i][j]   
     
-    if (diagonal == True):
-        return print("A matriz é identidade")
+    if (soma > diagonal):
+        return print("Matriz não é identidade")
+    if (soma == diagonal and soma and diagonal > 0):
+        return print("Matriz identidade")
     else:
-        return print("A matriz não é identidade")
+        return print("Matriz nula")
       
-
-verificarMatriz()
+vefMatrizId()
         
     
