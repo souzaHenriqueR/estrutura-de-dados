@@ -1,4 +1,4 @@
-def vefMatrizEsparsa(qtdColunas,qtdLinhas):
+def vefMatrizEsparsa(qtdColunas=0,qtdLinhas=0,matriz=None):
     m = []
     for i in range(qtdLinhas):
         l = [] 
@@ -21,4 +21,9 @@ def vefMatrizEsparsa(qtdColunas,qtdLinhas):
     else:
         return print("A matriz não é esparsa.")
 
+m = [[0,0],[0,0]]
+
+
 vefMatrizEsparsa(2,2)
+
+vefMatrizEsparsa(matriz=m)
