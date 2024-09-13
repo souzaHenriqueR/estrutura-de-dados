@@ -1,8 +1,5 @@
-def progAritmetica():
+def progAritmetica(priTermo,qtdTermos,razao):
     lista = []
-    priTermo = int(input("Informe o primeiro termo : "))
-    qtdTermos = int(input("Informe a quantidade de termos : "))
-    razao = int(input("Informe a razão : "))
     lista.append(priTermo)
 
     for i in range(qtdTermos -1 ):
@@ -10,4 +7,4 @@ def progAritmetica():
 
     return print(lista)
 
-progAritmetica()
+progAritmetica(2,10,7)

@@ -1,7 +1,4 @@
-def vefMatrizId():
-    qtdColunas = int(input("Informe o número de colunas da matriz : "))
-    qtdLinhas = int(input("Informe o número de linhas da matriz : "))
-    
+def vefMatrizId(qtdColunas,qtdLinhas):
     if (qtdColunas != qtdLinhas):
         return print("Valores informados não podem formar uma matriz identidade")
     
@@ -9,7 +6,7 @@ def vefMatrizId():
     for i in range(qtdColunas):
         l = [] 
         for i in range(qtdLinhas):
-            valor = int(input("Informe o valor a ser inserido : 1 ou 0 "))
+            valor = int(input("Informe o valor a ser inserido 1 ou 0 :  "))
             l.append(valor)
         m.append(l)
         
@@ -28,6 +25,6 @@ def vefMatrizId():
     else:
         return print("Matriz nula")
       
-vefMatrizId()
+vefMatrizId(3,3)
         
     

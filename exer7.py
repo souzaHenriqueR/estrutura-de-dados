@@ -1,9 +1,6 @@
 
 import random
-def verificarMatriz():
-    
-    qtdColunas = int(input("Informe o número de colunas da matriz : "))
-    qtdLinhas = int(input("Informe o número de linhas da matriz : "))
+def verificarMatriz(qtdColunas,qtdLinhas):
     m = []
     for i in range(qtdColunas):
         l = [] 
@@ -23,7 +20,7 @@ def verificarMatriz():
         print(f"A matriz não é nula")
       
 
-verificarMatriz()
+verificarMatriz(2,1)
         
     
     

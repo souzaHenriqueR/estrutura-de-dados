@@ -1,7 +1,4 @@
-def vefMatrizEsparsa():
-    qtdColunas = int(input("Informe o número de colunas da matriz: "))
-    qtdLinhas = int(input("Informe o número de linhas da matriz: "))
-    
+def vefMatrizEsparsa(qtdColunas,qtdLinhas):
     m = []
     for i in range(qtdLinhas):
         l = [] 
@@ -19,10 +16,9 @@ def vefMatrizEsparsa():
             if m[i][j] == 0:
                 count_zeros += 1
     
-    
     if count_zeros > total_elementos / 2:
         return print("A matriz é esparsa.")
     else:
         return print("A matriz não é esparsa.")
 
-vefMatrizEsparsa()
+vefMatrizEsparsa(2,2)

@@ -1,5 +1,4 @@
-def mediaGeometricaTotal():
-    qtdNumeros = int(input("Informe quantos elementos serão inseridos : "))
+def mediaGeometricaTotal(qtdNumeros):
     lista = []
     for i in range(qtdNumeros):
         numero = int(input("Informe o número a ser inserido : "))
@@ -15,4 +14,4 @@ def mediaGeometricaTotal():
     
     return print(f"A media geometrica da lista {lista} é : {mGeometricaTotal:.2f}")
 
-mediaGeometricaTotal()
+mediaGeometricaTotal(4)

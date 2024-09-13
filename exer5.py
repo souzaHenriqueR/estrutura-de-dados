@@ -1,6 +1,4 @@
-def mediaGeometrica():
-    
-    qtdNumeros = int(input("Informe quantos elementos serão inseridos : "))
+def mediaGeometrica(qtdNumeros):
     lista = []
     for i in range(qtdNumeros):
         numero = int(input("Informe o número a ser inserido : "))
@@ -10,6 +8,6 @@ def mediaGeometrica():
     menor = min(lista)
     mGeomtrica =  ( (maior * menor) ** 0.5 )
     
-    return print(f"A media é : {mGeomtrica:.2f}")
+    return print(f"A media é geometrica entre o menor e maior elemento da lista é : {mGeomtrica:.2f}")
 
-mediaGeometrica()
+mediaGeometrica(4)

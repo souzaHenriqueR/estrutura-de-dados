@@ -1,5 +1,4 @@
-def calcularFatorial():
-    qtdNumeros = int(input("Informe um número impar maior que 1 : "))
+def calcFatorMeioLista(qtdNumeros):
     lista = []
     for i in range(qtdNumeros):
         numero = int(input("Informe o número : "))
@@ -14,4 +13,4 @@ def calcularFatorial():
     
     return print(f"O fatorial de {elementoMeio} é {fat}")
 
-calcularFatorial()
+calcFatorMeioLista(5)

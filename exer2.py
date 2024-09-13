@@ -1,13 +1,11 @@
 
-def melhorPiorNadador():
+def melhorPiorNadador(qtdAtletas):
     listaNomes = []
     listaTempos = []
 
-    qtdAtletas = int(input("Informe a quantidade de atletas : "))
-
     for i in range(qtdAtletas):
         listaNomes.append(input("Informe o nome do atleta "))
-    listaTempos.append(int(input("Informe o tempo do atleta : ")))
+        listaTempos.append(int(input("Informe o tempo do atleta : ")))
 
     tempoMelhorAtleta = min(listaTempos)
     indiceMelhorAtleta = listaTempos.index(tempoMelhorAtleta)
@@ -28,4 +26,4 @@ def melhorPiorNadador():
 
 
 
-melhorPiorNadador()
+melhorPiorNadador(5)

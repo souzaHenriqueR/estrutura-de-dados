@@ -1,7 +1,4 @@
-def vefMatrizDiag():
-    qtdColunas = int(input("Informe o número de colunas da matriz: "))
-    qtdLinhas = int(input("Informe o número de linhas da matriz: "))
-    
+def vefMatrizDiag(qtdColunas,qtdLinhas):    
     if qtdColunas != qtdLinhas:
         return print("Valores informados não podem formar uma matriz quadrada.")
     
@@ -20,4 +17,4 @@ def vefMatrizDiag():
     
     return print("A matriz é diagonal.")
 
-vefMatrizDiag()
+vefMatrizDiag(4,4)
